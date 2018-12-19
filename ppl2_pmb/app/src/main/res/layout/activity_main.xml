@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ppljoss.ppl2_pmb.MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/layoutbarMain"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="vertical" />
+
+
+
+
+    <LinearLayout
+        android:id="@+id/linearlayoutimage"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/layoutbarMain">
+
+        <ViewFlipper
+            android:id="@+id/v_flipper"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></ViewFlipper>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearlayoutbutton1"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="35dp"
+        android:layout_below="@+id/linearlayoutimage"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="About Us"
+            android:layout_marginLeft="-20dp"
+
+            android:background="@null"/>
+
+        <Button
+            android:id="@+id/button_fakultas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Fakultas"
+            android:layout_marginLeft="20dp"
+
+            android:background="@null"/>
+
+        <Button
+            android:id="@+id/button_riset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Riset dan \nPublikasi"
+
+            android:layout_marginLeft="20dp"
+            android:background="@null" />
+
+    </LinearLayout>
+</RelativeLayout>
